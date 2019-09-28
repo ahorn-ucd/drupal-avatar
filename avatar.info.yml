@@ -10,6 +10,5 @@ dependencies:
   - node
   - options
   - path
-  - taxonomy
   - text
   - user
