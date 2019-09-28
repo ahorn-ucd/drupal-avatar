@@ -34,3 +34,5 @@ See `avatar.module`.
 ### CSS Colors and Animation
 The colors and animation are added if the appropriate classes are added to the markup, allowing us to target elements within
 the SVG element and make changes to element colors as well as animate them using CSS animations. See `dist/style.css`.
+
+###### Thanks for checking this out
