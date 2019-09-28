@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_items
+    - node.type.avatar
+  module:
+    - options
+id: node.avatar.field_items
+field_name: field_items
+entity_type: node
+bundle: avatar
+label: Items
+description: 'Choose an item for your avatar.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

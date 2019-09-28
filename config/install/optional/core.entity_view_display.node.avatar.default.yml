@@ -1,0 +1,88 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.avatar.body
+    - field.field.node.avatar.field_animate
+    - field.field.node.avatar.field_colorize_accessories
+    - field.field.node.avatar.field_drupalize_
+    - field.field.node.avatar.field_gender
+    - field.field.node.avatar.field_headware
+    - field.field.node.avatar.field_items
+    - node.type.avatar
+  module:
+    - options
+    - text
+    - user
+id: node.avatar.default
+targetEntityType: node
+bundle: avatar
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_animate:
+    weight: 106
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_colorize_accessories:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_drupalize_:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_gender:
+    weight: 102
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_headware:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_items:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

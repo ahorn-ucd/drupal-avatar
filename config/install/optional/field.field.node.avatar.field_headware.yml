@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headware
+    - node.type.avatar
+  module:
+    - options
+id: node.avatar.field_headware
+field_name: field_headware
+entity_type: node
+bundle: avatar
+label: Headware
+description: 'Choose some headware for your avatar.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

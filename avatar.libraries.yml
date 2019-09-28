@@ -1,0 +1,5 @@
+avatar:
+  version: 1.x
+  css:
+    state:
+      dist/style.css: {}

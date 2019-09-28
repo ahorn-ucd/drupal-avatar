@@ -1,0 +1,30 @@
+/* All Items */
+.avatar__item { fill:#636363; }
+
+/* Item Colors */
+.avatar--has-color .avatar__balloon { fill:#ed1414; }
+.avatar--has-color .avatar__sword { fill:#b5b568; }
+.avatar--has-color .avatar__wand { fill:#ce11ce; }
+
+/* Headware Colors */
+.avatar--has-color .avatar__cap { fill:#0678be; }
+.avatar--has-color .avatar__beanie { fill:#e8a725; }
+.avatar--has-color .avatar__tiara { fill:#de25e8; }
+.avatar--has-color .avatar__crown { fill:#25e837; }
+
+/* Waving Item Animation */
+.avatar--has-animation .avatar__balloon,
+.avatar--has-animation .avatar__sword,
+.avatar--has-animation .avatar__wand {
+  transform-origin: 127px 161px;
+  animation-name: wave-item;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes */
+@keyframes wave-item {
+  0%   { transform: rotate(-10deg); }
+  50%  { transform: rotate(20deg); }
+  100% { transform: rotate(-10deg); }
+}
