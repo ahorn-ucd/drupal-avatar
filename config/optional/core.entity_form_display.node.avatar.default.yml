@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.avatar.field_items
     - node.type.avatar
   module:
-    - content_moderation
     - path
 id: node.avatar.default
 targetEntityType: node
