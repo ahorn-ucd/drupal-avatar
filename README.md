@@ -27,10 +27,9 @@ Second I created a content type called **Avatar** and created all my fields to a
 Third I opened my `.svg` file in a code editor and moved the `<svg>` element and all of it's contents to a twig template 
 for my nodes full view mode. Once I had an inline svg in my template I was able to use twig conditional logic to make code
 render, or not render, based on the user selected options. See `templates/node--avatar--full.html.twig`.
-### Preprocessing
-Fourth, since there is already a system for adding and removing classes from node templates using `hook_preprocess_node()`, 
-I used this to add a modifier class for animation, and color based on the user selected settings. 
-See `avatar.module`.
+
+I added a modifier classes for animation, and color based on the user selected settings.
+
 ### CSS Colors and Animation
 The colors and animation are added if the appropriate classes are added to the markup, allowing us to target elements within
 the SVG element and make changes to element colors as well as animate them using CSS animations. See `dist/style.css`.
