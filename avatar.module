@@ -6,29 +6,6 @@
  */
 
 /**
- * Implements hook_preprocess_node() for node.html.twig.
- */
-function avatar_preprocess_node(array &$variables) {
-  $type = $variables["node"]->getType();
-
-  // Add classes to the full view mode on the Avatar content type
-  if ($variables['view_mode'] == 'full' && $type == 'avatar') {
-    $colorize = $variables["node"]->get('field_colorize_accessories')->getValue();
-    $animate = $variables["node"]->get('field_animate')->getValue();
-
-    // If "Colorize" is checked add the has color class
-    if (isset($colorize) && $colorize[0]["value"] == '1') {
-      $variables['attributes']['class'][] = 'avatar--has-color';
-    }
-
-    // If "Animate" is checked add the has animation class
-    if (isset($animate) && $animate[0]["value"] == '1') {
-      $variables['attributes']['class'][] = 'avatar--has-animation';
-    }
-  }
-}
-
-/**
  * Implements hook_theme().
  */
 function avatar_theme() {
